@@ -12,6 +12,10 @@ from moviepy.editor import *  # convert video to mp3
 import pafy  # YouTube download lib
 import humanize  # convert file size from bit to Mb
 
+###################################################
+#               created by Anwer nouri            #
+#               email:anwern29@outlook.fr         #
+###################################################
 
 class MainApp(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
