@@ -108,6 +108,12 @@ class MainApp(QMainWindow, Ui_MainWindow):
         ####################################################
         self.downloadButton_4.clicked.connect(self.converter)
         ######################################################
+                # Tool bar action
+        ######################################################
+        self.actionExit.triggered.connect(self.exit)
+        
+    def exit(self):
+        sys.exit()
 
     def progress_bar(self, blocknum, blocksize, totalsize):
 
