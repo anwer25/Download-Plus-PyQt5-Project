@@ -420,6 +420,7 @@ class MainApp(QMainWindow, Ui_MainWindow):
                     # need test
                     download = _file[quality].download(filepath=os.environ['Videos'],
                                                        callback=self.video_progressbar)
+            self.download_Completed.exec_()
             self.currentDownladFile_2.display(self.youtube_video_downloaded)
             self.youtub_url.setText('')
             self.qualityBox_2.clear()
